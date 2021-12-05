@@ -1,0 +1,39 @@
+.hero-row {
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.headline {
+  top: 200px;
+  left: 7rem;
+
+  &.headline-start {
+    position: fixed;
+    color: $black;
+
+    &.remove {
+      display: none;
+    }
+  }
+
+  &.headline-change {
+    position: absolute;
+    color: white;
+
+    &.stop {
+      position: relative;
+      top: 250px !important;
+    }
+  }
+}
+
+.hero-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin-bottom: 5rem;
+}
