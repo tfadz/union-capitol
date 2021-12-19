@@ -1,10 +1,14 @@
 
-$primary-font: 'Barlow', sans-serif;
-$secondary-font: 'DM Serif Display', serif;
+$primary-font: 'Ubuntu', sans-serif;
 
-$light: 200;
+$light: 300;
 $regular: 400;
+$regular-medium: 500;
 $bold: 700;
+
+strong {
+  font-weight: $bold;
+}
 
 $font__main: $primary-font;
 $font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

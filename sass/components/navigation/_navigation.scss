@@ -5,7 +5,6 @@
   #primary-menu {
     display: flex;
     align-items: center;
-    padding-top: .9rem;
     list-style: none;
 
     @media (max-width: 1000px) {
@@ -14,30 +13,37 @@
 
     > li {
       &:not(:last-child) {
-        margin-right: 1.5rem;
+        margin-right: 1.15rem;
       }
 
       &.current-menu-item {
         > a {
-          color: $blue;
+          color: $black;
           font-weight: $bold;
         }
       }
 
       > a {
-        color: $black;
+        color: $gray;
         display: inline-block;
-        font-size: 1.25rem;
-        padding: .5rem;
+        font-size: 0.9375rem;
+        font-weight: $regular-medium;
+        letter-spacing: 0.08em;
+        padding: .25rem;
         position: relative;
         text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: 3px solid $white;
+
 
         &:focus, &:visited {
           text-decoration: none;
         }
 
         &:hover {
-          color: $blue;
+          color: $black;
+          border-bottom: 3px solid $green;
+
         }
       }
     }

@@ -1,5 +1,5 @@
 .site-header {
-  padding: 1.5rem 0;
+  padding: 3rem 0 1.5rem 0;
 
   @media (max-width: $xsmall) {
     padding: .5rem 0;
@@ -14,19 +14,16 @@
   }
 
   &-row {
-    @media (max-width: 1000px) {
-      align-items: center;
-      display: flex;
-    }
+    align-items: center;
+    display: flex;
   }
 
   .site-branding {
     display: block;
-    max-width: 400px;
 
     img {
       width: 100%;
-      max-width: 230px;
+      max-width: 240px;
 
       @media (max-width: $small) {
         width: 100%;

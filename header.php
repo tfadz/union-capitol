@@ -19,7 +19,9 @@
 	<?php wp_head(); ?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js">
 
     
@@ -34,32 +36,17 @@
 	<header id="masthead" class="site-header">
 	<div class="container">
 		<div class="row site-header-row">
-			<div class="col-sm-2">
+			<div class="col-sm-3">
 				<div class="site-branding">
 				
           <?php if(has_custom_logo()) : ?>
     				<?php the_custom_logo(); ?>
     			<?php else : ?>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="no-logo"><?php echo get_bloginfo(); ?></a>
-    			<?php endif; ?>
-          <?php
-					if ( is_front_page() && is_home() ) :
-						?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php
-					else :
-						?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
-					endif;
-					$premier_description = get_bloginfo( 'description', 'display' );
-					if ( $premier_description || is_customize_preview() ) :
-						?>
-					
-					<?php endif; ?>
-				</div><!-- .site-branding -->
+    			<?php endif; ?>					
+				</div>
       </div>
-      <div class="col-sm-10">
+      <div class="col-sm-9">
       
       <nav id="site-navigation" class="main-navigation">
         <?php

@@ -1,0 +1,49 @@
+.image-two-col {
+  position: relative;
+  background: linear-gradient(to left, $yellow 50%, $white 50%);
+
+  &__media {
+    align-items: center;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+
+    h2 {
+      @extend .xl;
+
+      color: $white;
+    }
+  }
+
+  .primary, .secondary {
+    padding: 10rem 0 2rem 0;
+  }
+
+  .primary {
+    padding-right: 4rem;
+  }
+
+  .secondary {
+    &-facts {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      padding-top: 0;
+
+      li {
+        width: 50%;
+        padding: 0 2rem 3rem 2rem;
+
+        h3 {
+          color: $green;
+        }
+
+        span {
+          display: block;
+          font-size: 1.4375rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

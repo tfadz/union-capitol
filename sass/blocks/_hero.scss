@@ -1,3 +1,22 @@
+// .slide-up {
+//   animation-name: slide-up;
+//   animation-duration: 1.2s;
+//   animation-delay: .25s;
+//   animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+//   animation-fill-mode: forwards;
+// 
+// 
+//   @keyframes slide-up {
+//     0% {
+//       transform: translateY(100px);
+//     }
+// 
+//     100% {
+//       transform: translateY(0);
+//     }
+//   }
+// }
+
 .hero-row {
   min-height: 300px;
   overflow: hidden;
@@ -7,11 +26,13 @@
 
 .headline {
   top: 200px;
-  left: 7rem;
+  left: auto;
+  max-width: 700px;
+  z-index: 0;
 
   &.headline-start {
     position: fixed;
-    color: $black;
+    color: $blue;
 
     &.remove {
       display: none;
@@ -23,8 +44,7 @@
     color: white;
 
     &.stop {
-      position: relative;
-      top: 250px !important;
+      top: 200px !important;
     }
   }
 }
@@ -34,6 +54,5 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
-  margin-bottom: 5rem;
+  min-height: 650px;
 }

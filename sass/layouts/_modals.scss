@@ -1,0 +1,131 @@
+.modal {
+  background: rgba($black-default, 0.75);
+  bottom: 0;
+  display: none;
+  left: 0;
+  opacity: 0;
+  outline: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity .15s linear;
+  z-index: -1;
+
+  &.active {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: block;
+    opacity: 1;
+    z-index: 999;
+  }
+
+  &-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: auto;
+    width: 90%;
+    z-index: 100;
+
+    img {
+      margin: 0 auto;
+      height: 90vh;
+      transition: .3s ease-in-out;
+      max-width: 900px;
+      object-fit: contain;
+
+      @media (max-width: $medium) {
+        max-width: 100%;
+        margin: 1rem;
+      }
+    }
+  }
+
+  .video-embed {
+    height: 545px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 760px) {
+      height: 450px;
+      top: 4.5vh;
+    }
+
+    @media (max-width: $small) {
+      height: 400px;
+      top: 5vh;
+    }
+  }
+
+  iframe, object, embed {
+    height: 480px;
+    left: 0;
+    margin-top: 2rem;
+    margin: 0 auto;
+    overflow-y: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 800px;
+
+    @media (max-width: $small) {
+      height: 400px;
+    }
+  }
+}
+
+.close-modal {
+  background-color: $green;
+  border-radius: 50%;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  height: 3.25rem;
+  line-height: 0;
+  padding: 5px;
+  position: absolute;
+  right: 10vh;
+  text-align: center;
+  top: 5vh;
+  transition: background-color 0.3s ease-in-out;
+  width: 3.25rem;
+  z-index: 9999;
+
+  @media (max-width: $medium) {
+    right: 5vh;
+  }
+
+  @media (max-width: $small) {
+    right: 1rem;
+    top: 3.8vh;
+  }
+
+  &:hover {
+    background: $white;
+    cursor: pointer;
+  }
+}
+
+.modal-wrapper {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: none;
+
+  &.active {
+    display: block;
+    z-index: 999;
+  }
+}

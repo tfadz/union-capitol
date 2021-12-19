@@ -1,9 +1,42 @@
 .footer {
-  padding: 2rem 0;
-  background: $gray;
+  padding: 5.625rem 0 4rem 0;
+  background: $blue-dark url(./images/footer-graphic.svg) 90% no-repeat;
   color: $white;
-  
+  min-height: 400px;
+  position: relative;
+  z-index: 1;
 
+  &-primary {
+    padding-bottom: 5rem;
+
+    &-content {
+      h2 {
+        // 47px
+        font-size: 2.9375rem;
+      }
+
+      padding-bottom: .5rem;
+    }
+  }
+
+  &-legal {
+    font-size: 0.875rem;
+    color: $gray;
+
+    a {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
+  
+  .linkedin {
+    position: absolute;
+    right: 6rem;
+    bottom: 3rem;
+    img {
+      width: 3rem;
+    }
+  }
 
   .menu {
     display: flex;
@@ -12,6 +45,7 @@
       &:not(:last-child) {
         margin-right: 1rem;
       }
+
       a {
         text-decoration: none;
       }

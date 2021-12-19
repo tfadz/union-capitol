@@ -1,7 +1,7 @@
-<section class="content-block">
+<section class="content-block" data-aos="fade-up">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-11">
         <?php $headingSize = get_field('content_block_heading'); ?>
         <?php if($headingSize == 'h2') : ?>
           <h2><?php the_field('content_block_title'); ?></h2>
@@ -24,7 +24,8 @@
             </div>
           </div>
         <?php endif; ?>
-
+        <?php $cta_link = get_field('content_block_ctalink') ?>
+        <a class="button button-secondary" href="<?php echo $cta_link['url'] ?>"><?php the_field('content_block_cta') ?> <i class="fal fa-long-arrow-right"></i></a>
       </div>
     </div>
   </div>
