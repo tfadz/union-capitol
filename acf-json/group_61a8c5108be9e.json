@@ -3,6 +3,44 @@
     "title": "Hero",
     "fields": [
         {
+            "key": "field_61a8c53357bcc",
+            "label": "Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "Override default title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61bfde11eb181",
+            "label": "Title Secondary",
+            "name": "hero_title_secondary",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61a8c51357bcb",
             "label": "Image",
             "name": "hero",
@@ -25,25 +63,6 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_61a8c53357bcc",
-            "label": "Title",
-            "name": "hero_title",
-            "type": "text",
-            "instructions": "Override default title",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -55,7 +74,7 @@
             }
         ]
     ],
-    "menu_order": 5,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -64,5 +83,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639660514
+    "modified": 1639964196
 }

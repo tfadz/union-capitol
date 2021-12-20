@@ -1,21 +1,14 @@
-// .slide-up {
-//   animation-name: slide-up;
-//   animation-duration: 1.2s;
-//   animation-delay: .25s;
-//   animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
-//   animation-fill-mode: forwards;
-// 
-// 
-//   @keyframes slide-up {
-//     0% {
-//       transform: translateY(100px);
-//     }
-// 
-//     100% {
-//       transform: translateY(0);
-//     }
-//   }
-// }
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
 
 .hero-row {
   min-height: 300px;
@@ -25,27 +18,21 @@
 }
 
 .headline {
-  top: 200px;
+  top: 0;
   left: auto;
   max-width: 700px;
-  z-index: 0;
+  z-index: 99;
+  position: relative;
 
   &.headline-start {
-    position: fixed;
+    position: absolute;
     color: $blue;
-
-    &.remove {
-      display: none;
-    }
+    // animation: .5s fadeInUp forwards;
   }
 
   &.headline-change {
-    position: absolute;
+    // position: absolute;
     color: white;
-
-    &.stop {
-      top: 200px !important;
-    }
   }
 }
 

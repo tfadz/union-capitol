@@ -9,7 +9,6 @@ var unionFunctions = (function($) {
   
   hero = function() {
 
-      
   },
 
   videoSlider = function() {
@@ -95,6 +94,7 @@ var unionFunctions = (function($) {
       $(this).css('top',
         $('.headline-start').offset().top - $(this).closest('.hero-row').offset().top);
     });
+    
   };
 
   $(document).scroll(function() {
@@ -102,19 +102,6 @@ var unionFunctions = (function($) {
   });
 
   logoSwitch();
-
-  $(".content-block").bind("inview", function (event, visible) {
-    if (visible == true) {
-      $(".headline-change").addClass('stop');
-      $(".headline-start").addClass('remove');
-    }
-        
-    if (visible == false) {
-      $(".headline-change").removeClass('stop');
-      $(".headline-start").removeClass('remove');
-    }
-  });
-  
   
   AOS.init({
   	  offset: 200,
