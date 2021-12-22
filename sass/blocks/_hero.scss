@@ -1,3 +1,22 @@
+.feature-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 650px;
+  margin-bottom: 5rem;
+
+  &-main {
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+  }
+
+  h1 {
+    color: $white;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     transform: translate3d(0, 40px, 0);
@@ -25,9 +44,11 @@
   position: relative;
 
   &.headline-start {
+    opacity: 0;
     position: absolute;
     color: $blue;
-    // animation: .5s fadeInUp forwards;
+    animation: .8s fadeInUp forwards;
+    animation-delay: .75s;
   }
 
   &.headline-change {

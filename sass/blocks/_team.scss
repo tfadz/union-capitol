@@ -1,0 +1,21 @@
+.team {
+  &-section {
+    background: $yellow;
+    padding: 10rem 0;
+
+    .post {
+      text-decoration: none;
+
+      .featured-img {
+        height: 300px;
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        color: $green;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 $black-default: #000000;
-$black: #323232;
+$black: #000000;
 $white: #FFFFFF;
 $gray: #8b8a8a;
 $blue: #004279;
@@ -9,6 +9,10 @@ $green: #4c721d;
 $green-dark: #305420;
 $green-light: #76a465;
 $yellow: #faf6e7;
+
+.bg-yellow {
+  background: $yellow;
+}
 
 
 $color__background-body: #fff;

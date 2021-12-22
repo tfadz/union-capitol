@@ -94,6 +94,7 @@ var unionFunctions = (function($) {
       $(this).css('top',
         $('.headline-start').offset().top - $(this).closest('.hero-row').offset().top);
     });
+    
   };
 
   $(document).scroll(function() {

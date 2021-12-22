@@ -1,41 +1,41 @@
 {
-    "key": "group_61a8c5108be9e",
-    "title": "Homepage Hero",
+    "key": "group_61c27bcf73b89",
+    "title": "Hero Secondary",
     "fields": [
         {
-            "key": "field_61a8c53357bcc",
+            "key": "field_61c27dd0959a9",
             "label": "Title",
-            "name": "home_hero_title",
-            "type": "text",
-            "instructions": "Override default title",
+            "name": "hero_sec_title",
+            "type": "textarea",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "60",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br"
         },
         {
-            "key": "field_61a8c51357bcb",
+            "key": "field_61c27dd8959aa",
             "label": "Image",
-            "name": "home_hero",
+            "name": "hero_sec_image",
             "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "40",
                 "class": "",
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "thumbnail",
+            "preview_size": "medium",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -49,13 +49,13 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "page_template",
                 "operator": "==",
-                "value": "acf\/home-hero"
+                "value": "page-about.php"
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 4,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -64,5 +64,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640129148
+    "modified": 1640136219
 }

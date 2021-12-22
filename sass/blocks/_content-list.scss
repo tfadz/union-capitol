@@ -1,0 +1,30 @@
+.content-list {
+  margin-right: -4rem;
+  margin-left: -4rem;
+
+  & > .col,
+  & > [class*="col-"] {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  &-main {
+    padding-bottom: 4rem;
+  }
+	
+	&-text {
+		max-width: 850px;
+	}
+
+  &-section {
+    padding: 4rem 0;
+
+    h2 {
+      color: $blue;
+    }
+  }
+
+  h3 {
+    color: $black;
+  }
+}

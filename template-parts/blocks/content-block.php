@@ -25,7 +25,9 @@
           </div>
         <?php endif; ?>
         <?php $cta_link = get_field('content_block_ctalink') ?>
+        <?php if($cta_link) :  ?>
         <a class="button button-secondary" href="<?php echo $cta_link['url'] ?>"><?php the_field('content_block_cta') ?> <i class="fal fa-long-arrow-right"></i></a>
+      <?php endif; ?>
       </div>
     </div>
   </div>

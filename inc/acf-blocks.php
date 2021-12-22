@@ -6,9 +6,9 @@ function acf_blocks_init()
   
   // Add Blocks Here
   acf_register_block_type(array(
-    'name'              => 'hero',
-    'title'             => __('Featured Hero'),
-    'render_template'   => '/template-parts/blocks/hero.php',
+    'name'              => 'home_hero',
+    'title'             => __('Home Hero'),
+    'render_template'   => '/template-parts/blocks/home-hero.php',
     'category'          => 'union-blocks',
     'mode' => 'edit',
     'icon' => array(
@@ -105,6 +105,22 @@ function acf_blocks_init()
     'name'              => 'cards',
     'title'             => __('Cards'),
     'render_template'   => '/template-parts/blocks/cards.php',
+    'category'          => 'union-blocks',
+    'mode' => 'edit',
+    'icon' => array(
+      // Specifying a background color to appear with the icon e.g.: in the inserter.
+      'background' => '#004279',
+      // Specifying a color for the icon (optional: if not set, a readable color will be automatically defined)
+      'foreground' => '#fff',
+      // Specifying a dashicon for the block
+      'src' => 'bank',
+    ),
+  ));
+  
+  acf_register_block_type(array(
+    'name'              => 'team_gallery',
+    'title'             => __('Team Gallery'),
+    'render_template'   => '/template-parts/blocks/gallery-team.php',
     'category'          => 'union-blocks',
     'mode' => 'edit',
     'icon' => array(

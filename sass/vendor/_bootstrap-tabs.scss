@@ -1,0 +1,118 @@
+.tabbed-block {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 1rem;
+
+    // Disabled state lightens text
+    &.disabled {
+      color: #CCC;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  //
+  // Tabs
+  //
+
+  .nav-tabs {
+		background: $green;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		padding: 0;
+
+		li {
+			background: $green;
+			a {
+				color: $white;
+				font-family: $secondary-font;
+				font-weight: $bold;
+				text-decoration: none;
+				font-size: 3rem;
+				padding: 1rem 2rem;
+				&.active {
+					background: $blue;
+					padding: 0 1rem
+				}
+			}
+			
+		}
+
+    .nav-item {
+      margin-bottom: -1px;
+    }
+
+    .nav-link {
+      border: 1px solid transparent;
+
+      &.disabled {
+        color: #CCC;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+
+    .nav-link.active,
+    .nav-item.show .nav-link {
+      color: $green;
+      background-color: $blue;
+      border-color: #CCC;
+    }
+
+  
+  }
+
+
+  .nav-pills {
+    .nav-link {}
+
+    .nav-link.active,
+    .show > .nav-link {
+      color: $blue;
+      background-color: $black;
+    }
+  }
+
+  .nav-fill {
+    .nav-item {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  }
+
+  .nav-justified {
+    .nav-item {
+      flex-basis: 0;
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
+
+  // Tabbable tabs
+  //
+  // Hide tabbable panes to start, show them when `.active`
+
+  .tab-content {
+		background: $green;
+		* {
+			color: $white;
+		}
+    > .tab-pane {
+      display: none;
+			padding: 5rem 2rem;
+    }
+
+    > .active {
+			background: $blue;
+      display: block;
+    }
+  }
+}

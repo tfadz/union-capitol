@@ -1,4 +1,6 @@
 jQuery(function($) {
+  // window.setTimeout(function() { $('.desktop.navigation .menu-primary-container').addClass('show');}, 100);
+
   var controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
