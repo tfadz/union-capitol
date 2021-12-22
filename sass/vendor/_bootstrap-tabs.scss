@@ -24,27 +24,34 @@
   //
 
   .nav-tabs {
-		background: $green;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-		padding: 0;
+    background: $green;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0;
+    overflow: hidden;
+    padding: 1rem 0;
 
-		li {
-			background: $green;
-			a {
-				color: $white;
-				font-family: $secondary-font;
-				font-weight: $bold;
-				text-decoration: none;
-				font-size: 3rem;
-				padding: 1rem 2rem;
-				&.active {
-					background: $blue;
-					padding: 0 1rem
-				}
-			}
-			
-		}
+    li {
+      background: $green;
+      padding: 0;
+      display: block;
+      line-height: normal;
+
+      a {
+        color: $white;
+        font-family: $secondary-font;
+        font-weight: $bold;
+        text-decoration: none;
+        font-size: 3rem;
+        padding: 1rem 4rem;
+        letter-spacing: -0.02em;
+
+        &.active {
+          background: $blue;
+          padding: 1rem 4rem;
+        }
+      }
+    }
 
     .nav-item {
       margin-bottom: -1px;
@@ -66,10 +73,7 @@
       background-color: $blue;
       border-color: #CCC;
     }
-
-  
   }
-
 
   .nav-pills {
     .nav-link {}
@@ -101,17 +105,19 @@
   // Hide tabbable panes to start, show them when `.active`
 
   .tab-content {
-		background: $green;
-		* {
-			color: $white;
-		}
+    background: $green;
+
+    * {
+      color: $white;
+    }
+
     > .tab-pane {
       display: none;
-			padding: 5rem 2rem;
+      padding: 5rem 5rem 3rem 4rem;
     }
 
     > .active {
-			background: $blue;
+      background: $blue;
       display: block;
     }
   }

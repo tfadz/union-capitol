@@ -1,0 +1,120 @@
+.timeline {
+  background: $yellow;
+  padding: 4rem 0;
+  margin-top: 8rem;
+
+  .et-horizontal-timeline {
+    .bx-wrapper .bx-viewport {
+      background: none;
+    }
+
+    .et-content-block {
+      display: flex;
+
+      .et-title {
+        display: none;
+      }
+
+      .et-image {
+        max-width: 500px;
+      }
+
+      .et-content {
+        font-size: 1.25rem;
+        color: $black;
+        font-family: $primary-font;
+        padding-left: 5rem;
+      }
+    }
+
+    .et-hor-timeline-date {
+      > li > a {
+        padding: 0 4rem;
+
+        .et-horiz-title {
+          opacity: 0;
+        }
+      }
+
+      .et-active {
+        background: $green;
+        color: $white;
+        border: none;
+
+        .et-horiz-title {
+          opacity: 1;
+        }
+      }
+
+      .et-horiz-title {
+        color: $white !important;
+        border: none;
+        font-family: $secondary-font;
+        font-weight: $bold;
+        font-size: 3rem;
+				line-height: 1;
+
+        &:before {
+          content: "";
+          background: $green;
+          border: none;
+        }
+      }
+    }
+
+    .et-timeline-one {
+      padding: 0;
+      margin: 0;
+    }
+
+    .et-timeline-hor-line {
+      background: $green;
+      height: 1px;
+    }
+
+    .et-horizontal-circle {
+      background: $green;
+    }
+
+    .et-bottom-wrap {
+      border: none;
+    }
+
+    .et-timeline-date-one {
+      border: none;
+    }
+
+    .et-hor-top-header {
+      background: $green;
+      color: $white;
+      border: none;
+
+      .et-title {
+        color: $white;
+        font-size: 2rem;
+        font-family: $secondary-font;
+        font-weight: $bold;
+      }
+    }
+
+    .bx-controls-direction {
+      a {
+        background: $blue !important;
+        background-position: center;
+        border-radius: 0 !important;
+				margin-top: -22px!important;
+        width: 3.5rem!important;
+        height: 3rem!important;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+        .fa {
+          line-height: 1.1;
+          font-size: 1.25rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

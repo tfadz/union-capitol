@@ -5,11 +5,17 @@ var unionFunctions = (function($) {
     videoSlider();
     mobileMenu();
     modals();
+    tabs();
   },
   
   hero = function() {
 
   },
+  
+  tabs = function() {
+    
+    $('.nav.nav-tabs > li:first-child > a').addClass('active');
+  }
 
   videoSlider = function() {
     $('.video-slider').slick({
