@@ -87,6 +87,13 @@
         ],
         [
             {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-team.php"
+            }
+        ],
+        [
+            {
                 "param": "block",
                 "operator": "==",
                 "value": "acf\/cards"
@@ -102,5 +109,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640135124
+    "modified": 1640206768
 }

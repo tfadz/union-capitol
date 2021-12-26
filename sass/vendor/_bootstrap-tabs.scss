@@ -19,14 +19,12 @@
     }
   }
 
-  //
   // Tabs
-  //
 
   .nav-tabs {
     background: $green;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     padding: 0;
     overflow: hidden;
     padding: 1rem 0;
@@ -100,13 +98,9 @@
     }
   }
 
-  // Tabbable tabs
-  //
   // Hide tabbable panes to start, show them when `.active`
 
   .tab-content {
-    background: $green;
-
     * {
       color: $white;
     }
@@ -119,6 +113,8 @@
     > .active {
       background: $blue;
       display: block;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
     }
   }
 }

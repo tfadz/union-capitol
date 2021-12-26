@@ -234,6 +234,20 @@
                 "operator": "==",
                 "value": "page-about.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-team.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contact.php"
+            }
         ]
     ],
     "menu_order": 2,
@@ -245,5 +259,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640136462
+    "modified": 1640273608
 }

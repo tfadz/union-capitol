@@ -1,4 +1,9 @@
 <nav class="menu-mobile">
+  <header>
+    <?php if(has_custom_logo()) : ?>
+      <?php the_custom_logo(); ?>
+    <?php endif; ?>
+  </header>
   <?php
     wp_nav_menu(
       array(

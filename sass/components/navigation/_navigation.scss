@@ -37,7 +37,6 @@
         text-transform: uppercase;
         border-bottom: 3px solid $white;
 
-
         &:focus, &:visited {
           text-decoration: none;
         }
@@ -45,7 +44,6 @@
         &:hover {
           color: $black;
           border-bottom: 3px solid $green;
-
         }
       }
     }
@@ -139,6 +137,16 @@
     transition: .3s ease-in-out;
     width: 65vw;
     z-index: 90;
+
+    header {
+      padding-top: 1.5rem;
+      padding-left: 1rem;
+
+      img {
+        width: 100%;
+        max-width: 150px;
+      }
+    }
   }
 
   @media (max-width: 480px) {
@@ -146,14 +154,14 @@
   }
 
   #primary-menu {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     padding-left: 1rem;
 
     li {
       margin-bottom: 1rem;
 
       a {
-        font-size: 2rem;
+        font-size: 1.85rem;
         text-decoration: none;
       }
     }

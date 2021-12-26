@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header" data-aos="fade-up">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -20,48 +20,49 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				Pensacola_posted_on();
-				Pensacola_posted_by();
-				?>
-			</div><!-- .entry-meta -->
+		
 		<?php endif; ?>
+    <h3><?php the_field('team_title') ?></h3>
 	</header><!-- .entry-header -->
 
 
-	<div class="entry-content">
-  <div class="" style="float: left;display: block;min-width: 200px;">
-    <div style="margin-right: 1rem;">
-        <?php Pensacola_post_thumbnail(); ?>
-      </div>
-    
+<div class="entry-content">
+  <div class="bio-main">
+    <figure data-aos="fade-up" data-aos-delay="100"><?php Pensacola_post_thumbnail(); ?></figure>
+    <article class="bio-primary">
+      <div class="bio-content" data-aos="fade-up" data-aos-delay="300">
+        <?php
+        the_content(
+          sprintf(
+            wp_kses(
+              /* translators: %s: Name of current post. Only visible to screen readers */
+              __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'pensacola' ),
+              array(
+                'span' => array(
+                  'class' => array(),
+                ),
+              )
+            ),
+            wp_kses_post( get_the_title() )
+            )
+          );
+          ?>
+          <h5>CONTACT</h5>
+          <ul class="bio-contact">
+            <li class="phone"><i class="fas fa-phone-alt"></i><?php the_field('phone') ?></li>
+            <li class="email"><i class="fas fa-comments-alt"></i><a class="" href="<?php the_field('email') ?>">Email me</a></li>
+          </ul>
+          <div class="bio-contact-footer">
+            <a class="linkedin" href="<?php the_field('linkedin') ?>"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div><a href="/team" class="button">BACK TO TEAM</a></div>
+    </article>
+  
   </div>
 
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'pensacola' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pensacola' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="entry-footer">
 		<?php Pensacola_entry_footer(); ?>

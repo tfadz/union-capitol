@@ -16,7 +16,7 @@
         
         <div class="row">   
           <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <a class="post" href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">
                 <div class="featured-img"  style="<?php $featured_img_url = get_the_post_thumbnail_url($p->ID,'large'); ?>
                 <?php if($featured_img_url) : ?>

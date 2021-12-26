@@ -1,8 +1,9 @@
 p {
   margin: 0 0 1.5em 0;
   padding: 0;
-  font-size: 1.4375rem;
-  line-height: 1.4;
+  font-size: 1.375rem;
+  font-weight: $regular;
+  line-height: 1.5;
 
   @media (max-width: $xsmall) {
     margin-bottom: 1em;

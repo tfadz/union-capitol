@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col">
       <div class="feature-hero-main">
-        <h1>
+        <h1 data-aos="fade-up">
           <?php if(get_field('hero_sec_title')) : ?>
             <?php the_field('hero_sec_title') ?>
           <?php else : ?>

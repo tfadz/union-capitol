@@ -1,11 +1,11 @@
 {
-    "key": "group_61c08cff63c0c",
-    "title": "Member Details",
+    "key": "group_61c72005e136e",
+    "title": "Inquiry Block",
     "fields": [
         {
-            "key": "field_61c08d054bec3",
+            "key": "field_61c72024c1ddb",
             "label": "Title",
-            "name": "team_title",
+            "name": "inquiry_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,9 +22,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_61c39a9527735",
-            "label": "Phone",
-            "name": "phone",
+            "key": "field_61c72035c1ddc",
+            "label": "Text",
+            "name": "inquiry_text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -41,9 +41,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_61c39aa527736",
+            "key": "field_61c72049c1ddd",
             "label": "Email",
-            "name": "email",
+            "name": "inquiry_email",
             "type": "email",
             "instructions": "",
             "required": 0,
@@ -57,34 +57,18 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_61c39ab327737",
-            "label": "Linkedin",
-            "name": "linkedin",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "team_members"
+                "value": "page-contact.php"
             }
         ]
     ],
-    "menu_order": 20,
+    "menu_order": 8,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -93,5 +77,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640209105
+    "modified": 1640440155
 }

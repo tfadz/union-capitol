@@ -1,0 +1,18 @@
+.location {
+	padding-bottom: 4rem;
+	.fas {
+	  margin-right: 1rem;
+	  color: $green;
+	  font-size: 1.25rem;
+	  line-height: 1;
+	}
+	.map {
+		margin-bottom: 2rem;
+		display: block;
+		overflow: hidden;
+		height: 400px;
+	}
+	.phone, .email {
+		font-weight: $regular-medium;
+	}
+}

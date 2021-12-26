@@ -1,8 +1,8 @@
 .site-header {
   padding: 2rem 0;
 
-  @media (max-width: $xsmall) {
-    padding: .5rem 0;
+  @media (max-width: $small) {
+    padding: .85rem 0;
   }
 
   .no-logo {
@@ -27,7 +27,7 @@
 
       @media (max-width: $small) {
         width: 100%;
-        max-width: 190px;
+        max-width: 200px;
       }
 
       @media (max-width: $xsmall) {
@@ -38,7 +38,6 @@
   }
 
   .hamburger {
-    background-color: $black;
     border-radius: 0;
     height: 4px;
     padding: 0;
@@ -54,8 +53,8 @@
       display: none;
       position: absolute;
       right: 1rem;
-      top: auto;
-      width: 2.5rem;
+      top: -1.5rem;
+      width: 32px;
       z-index: 99;
 
       @media (max-width: $xsmall) {
@@ -63,7 +62,7 @@
       }
 
       &.active {
-        background: $black;
+        // background: $black;
       }
 
       &:hover {

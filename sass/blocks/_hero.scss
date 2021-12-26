@@ -6,10 +6,17 @@
   min-height: 650px;
   margin-bottom: 5rem;
 
+  @media (max-width: $small) {
+    min-height: 400px;
+  }
+
   &-main {
     display: flex;
     align-items: center;
     min-height: 650px;
+    @media (max-width: $small) {
+      min-height: 400px;
+    }
   }
 
   h1 {

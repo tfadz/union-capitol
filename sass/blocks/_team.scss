@@ -5,6 +5,8 @@
 
     .post {
       text-decoration: none;
+      display: block;
+      margin-bottom: 4rem;
 
       .featured-img {
         height: 300px;
@@ -14,7 +16,114 @@
       h3 {
         color: $green;
         font-size: 1.5rem;
+        font-family: $primary-font;
+        font-weight: $regular-medium;
         text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.single-team_members {
+  
+  li#menu-item-19 {
+    > a {
+      color: $black;
+      font-weight: $bold;
+      border-bottom: 3px solid $green;
+    }
+  }
+  .team_members {
+    padding-bottom: 4rem;
+  }
+
+  .entry-header {
+    h1 {
+      padding-bottom: 0;
+    }
+  }
+
+  .bio-main {
+    display: flex;
+    padding-bottom: 4rem;
+
+    figure {
+      width: 100%;
+      max-width: 388px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .button {
+      align-items: flex-start;
+      color: $green;
+      font-weight: $regular-medium;
+
+      &:hover {
+        background: $green;
+        color: $white;
+      }
+    }
+
+    .bio-primary {
+      margin-left: 4rem;
+    }
+  }
+
+  .bio-content {
+    background: $yellow;
+    padding: 4rem 4rem 3rem 4rem;
+    margin-bottom: 4rem;
+
+    h5 {
+      color: $blue;
+    }
+
+    .bio-contact {
+      padding: 1rem 0 0 0;
+
+      li {
+        padding: 0;
+        font-size: 1.25rem;
+        font-weight: $regular-medium;
+        display: flex;
+        align-items: center;
+        padding-bottom: .5rem;
+
+        .fas {
+          margin-right: 1rem;
+          color: $green;
+          font-size: 1.25rem;
+          line-height: 1;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      &-footer {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .linkedin {
+      background: $white;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      padding: 1.5rem;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+      .fab {
+        font-size: 2rem;
       }
     }
   }

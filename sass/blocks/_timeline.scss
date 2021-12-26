@@ -52,7 +52,7 @@
         font-family: $secondary-font;
         font-weight: $bold;
         font-size: 3rem;
-				line-height: 1;
+        line-height: 1;
 
         &:before {
           content: "";
@@ -102,17 +102,44 @@
         background: $blue !important;
         background-position: center;
         border-radius: 0 !important;
-				margin-top: -22px!important;
-        width: 3.5rem!important;
-        height: 3rem!important;
-				display: flex;
-				align-items: center;
-				justify-content: center;
+        margin-top: -22px !important;
+        width: 3.25rem !important;
+        height: 3rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .fa {
           line-height: 1.1;
           font-size: 1.25rem;
           font-weight: 400;
+          display: none;
+        }
+
+        &.bx-prev, &.bx-next {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:before {
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            content: "\f0d9";
+						height: 27px;
+            font-size: 2rem;
+            color: $white;
+            display: block;
+            left: -2px;
+            position: relative;
+            z-index: 1;
+          }
+        }
+
+        &.bx-next {
+          &:before {
+            content: "\f0da";
+						left: 2px;
+          }
         }
       }
     }
