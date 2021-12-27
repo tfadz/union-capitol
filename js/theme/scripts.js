@@ -94,27 +94,13 @@ var unionFunctions = (function($) {
 
   }
 
-
-  function logoSwitch () {
-    $('.headline-change').each(function() {
-      $(this).css('top',
-        $('.headline-start').offset().top - $(this).closest('.hero-row').offset().top);
-    });
-  };
-
-  $(document).scroll(function() {
-    logoSwitch(); 
-  });
-
-  logoSwitch();
   
   AOS.init({
-  	  offset: 200,
-  	  once: false,
-  	  duration: 700,
-  	  easing: 'ease-in-out',
-  	  delay: 50,
-  	  disable: 'mobile'
+	  offset: 200,
+	  once: false,
+	  duration: 700,
+	  easing: 'ease-in-out',
+	  delay: 50
   })
 
 return {

@@ -24,6 +24,8 @@ function pensacola_scripts() {
   wp_enqueue_script( 'magic-scripts', get_template_directory_uri() . "/js/magic-scripts.js", array( 'jquery' ), '2', true );
 
   wp_enqueue_script( 'aos', get_template_directory_uri() . "/js/aos.js", array( 'jquery' ), '2', true );
+  wp_enqueue_script( 'hero-scroll', get_template_directory_uri() . "/js/hero-scroll.js", array( 'jquery' ), '2', true );
+
 
 
 

@@ -1,10 +1,25 @@
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 .feature-hero {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   min-height: 650px;
-  margin-bottom: 5rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 20vh;
 
   @media (max-width: $small) {
     min-height: 400px;
@@ -21,20 +36,20 @@
 
   h1 {
     color: $white;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0);
+    left: auto;
     opacity: 0;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
+    max-width: 700px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    animation: .8s fadeInUp forwards;
+    animation-delay: .5s;
+    
   }
 }
+
+
 
 .hero-row {
   min-height: 300px;
@@ -55,7 +70,7 @@
     position: absolute;
     color: $blue;
     animation: .8s fadeInUp forwards;
-    animation-delay: .75s;
+    animation-delay: .5s;
   }
 
   &.headline-change {
