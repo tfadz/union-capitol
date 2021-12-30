@@ -10,6 +10,18 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 .feature-hero {
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +64,7 @@
 
 
 .hero-row {
-  min-height: 300px;
+  min-height: 250px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -74,8 +86,11 @@
   }
 
   &.headline-change {
-    // position: absolute;
+    opacity: 0;
     color: white;
+    // This is to hide the text on page load and then show
+    animation: .2s fadeIn forwards;
+    animation-delay: .5s;
   }
 }
 

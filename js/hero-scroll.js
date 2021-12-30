@@ -22,11 +22,11 @@ jQuery(function($) {
 
   $(document).scroll(function() {
     homeHero();
-		hero();
 		imageTwoCol(); 
+		hero();
   });
 
   homeHero();
-	hero();
 	imageTwoCol();
+	hero();
 });

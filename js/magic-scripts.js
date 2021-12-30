@@ -19,6 +19,7 @@ jQuery(function($) {
   .setPin(".image-two-col__media h2")
   .addTo(imageTwocol);
   
+  
   var imageTwocolFade = new ScrollMagic.Controller();
   // tween = TweenMax.to(".image-two-col__media h2", .6, {opacity: 1});
   new ScrollMagic.Scene({
@@ -32,7 +33,7 @@ jQuery(function($) {
   var hero = new ScrollMagic.Controller();
   new ScrollMagic.Scene({
    triggerElement: ".feature-hero-main .feature-hero-main",
-   duration: 700,
+   duration: 750,
   })
   .setPin(".feature-hero .feature-hero-main h1")
   .addTo(hero);
