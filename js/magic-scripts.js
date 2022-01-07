@@ -1,10 +1,10 @@
 jQuery(function($) {
-  // window.setTimeout(function() { $('.desktop.navigation .menu-primary-container').addClass('show');}, 100);
+  						
 
   var controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
-   triggerElement: ".hero-img",
+   triggerElement: ".block-content",
    duration: 500,
   })
   .setPin(".headline-start")
@@ -14,10 +14,13 @@ jQuery(function($) {
   var imageTwocol = new ScrollMagic.Controller();
   new ScrollMagic.Scene({
    triggerElement: ".image-two-col__media h2",
-   duration: 600,
+   duration: 620
   })
   .setPin(".image-two-col__media h2")
+  // .addIndicators()
   .addTo(imageTwocol);
+
+  
   
   
   var imageTwocolFade = new ScrollMagic.Controller();

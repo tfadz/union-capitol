@@ -1,6 +1,20 @@
+@font-face {
+  font-family: 'Canela Deck Web';
+  src: url("./fonts/CanelaDeck-Medium-Web.woff2") format("woff2"), url("./fonts/CanelaDeck-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
 
-$primary-font: 'Ubuntu', sans-serif;
-$secondary-font: 'Spectral', serif;
+.CanelaDeck-Medium-Web {
+  font-family: 'Canela Deck Web';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+$primary-font: "Ubuntu", sans-serif;
+$secondary-font: "Canela Deck Web", serif;
 
 $light: 300;
 $regular: 400;

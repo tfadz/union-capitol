@@ -20,6 +20,8 @@ function pensacola_scripts() {
 
   wp_enqueue_script( 'scrollmagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js', false );
   wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js', false );
+  
+  wp_enqueue_script( 'indicators', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js', false );
 
   wp_enqueue_script( 'magic-scripts', get_template_directory_uri() . "/js/magic-scripts.js", array( 'jquery' ), '2', true );
 
