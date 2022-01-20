@@ -1,19 +1,14 @@
 var unionFunctions = (function($) {
 
   var init = function() {
-    hero();
     videoSlider();
     mobileMenu();
     modals();
     tabs();
-  },
-  
-  hero = function() {
-
+    header();
   },
   
   tabs = function() {
-    
     $('.nav.nav-tabs > li:first-child > a').addClass('active');
   }
 
@@ -92,8 +87,20 @@ var unionFunctions = (function($) {
       $('.modal-wrapper .modal').remove();
     });
 
+  },
+  
+  header = function() {
+    var previousScroll = 0; 
+    $(window).scroll(function(event) {   
+      var scroll = $(this).scrollTop();
+        if (scroll > 120 && scroll < previousScroll) {
+          $(".site-header").addClass("fixed");
+        }else{
+          $(".site-header").removeClass("fixed");
+        }
+        previousScroll = scroll;
+    });
   }
-
   
   AOS.init({
 	  offset: 200,

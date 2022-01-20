@@ -34,6 +34,7 @@
     h5 {
       color: $blue-light;
       margin: 0;
+      letter-spacing: 0.03em;
       padding: 0 0 .75rem 0;
       font-weight: $bold;
       text-transform: uppercase;
@@ -57,11 +58,18 @@
 
       img {
         width: 2rem;
+        transition: .2s ease-in-out;
+        left: 0;
+        position: relative;
       }
     }
 
     &:hover {
       border: 1px solid $blue;
+
+      img {
+        left: .7rem;
+      }
     }
   }
 }

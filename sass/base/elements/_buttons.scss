@@ -53,12 +53,21 @@ input[type="submit"] {
     border: none;
     color: $gray;
     font-size: 0.9375rem;
+    font-weight: $regular-medium;
     letter-spacing: 0.03em;
     padding: 0;
     position: relative;
     text-decoration: none;
     text-align: left;
     text-transform: uppercase;
+    
+    img {
+      max-width: 2.5rem;
+      margin-left: 1rem;
+      position: relative;
+      left: 0;
+      transition: .2s ease-in-out;
+    }
 
     &:active, &:visited {
       color: $gray;
@@ -67,6 +76,10 @@ input[type="submit"] {
     &:hover {
       color: $green;
       background: none;
+      
+      img {
+        left: .7rem;
+      }
     }
     .fal {
       margin-left: 7px;

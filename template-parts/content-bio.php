@@ -13,7 +13,7 @@
 	<header class="entry-header" data-aos="fade-up">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title alt">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -50,7 +50,7 @@
           <h5>CONTACT</h5>
           <ul class="bio-contact">
             <li class="phone"><i class="fas fa-phone-alt"></i><?php the_field('phone') ?></li>
-            <li class="email"><i class="fas fa-comments-alt"></i><a class="" href="<?php the_field('email') ?>">Email me</a></li>
+            <li class="email"><i class="fas fa-comments-alt"></i><a class="" href="mailto:<?php the_field('email') ?>">Email me</a></li>
           </ul>
           <div class="bio-contact-footer">
             <a class="linkedin" href="<?php the_field('linkedin') ?>"><i class="fab fa-linkedin-in"></i></a>

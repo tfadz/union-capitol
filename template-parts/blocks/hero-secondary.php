@@ -1,6 +1,6 @@
 <?php $fhero2 = get_field('hero_sec_image') ?>
 
-<div class="feature-hero" style="background-image: url(<?php echo $fhero2['url'] ?>);">
+<div class="feature-hero marvin" style="background-image: url(<?php echo $fhero2['url'] ?>);">
   <div class="container">
     <div class="row">
       <div class="col">

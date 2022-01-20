@@ -15,6 +15,8 @@ function pensacola_scripts() {
 
 
 	wp_enqueue_script( 'pensacola-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'headroom', get_template_directory_uri() . "/js/headroom.js", array( 'jquery' ), '2', true );
+
   wp_enqueue_script( 'slick', get_template_directory_uri() . "/js/slick.js", array( 'jquery' ), '2', true );
   wp_enqueue_script( 'tweenmagic', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js', false );
 
@@ -73,9 +75,9 @@ function my_login_logo() { ?>
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          height: 150px;
+          height: 80px;
           max-width: 100%;
-          padding-bottom: 1rem;
+          margin-bottom: 0;
           width: auto;
         }
     </style>

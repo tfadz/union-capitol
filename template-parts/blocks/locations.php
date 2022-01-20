@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row content-list" data-aos="fade-up" data-aos-delay="200">
+  <div class="row content-list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="-100">
       <?php if (have_rows('locations')) : while (have_rows('locations')) : the_row(); ?>
         <div class="col col-md-6">
           <div class="location">

@@ -17,7 +17,6 @@ jQuery(function($) {
    duration: 620
   })
   .setPin(".image-two-col__media h2")
-  // .addIndicators()
   .addTo(imageTwocol);
 
   
@@ -36,9 +35,10 @@ jQuery(function($) {
   var hero = new ScrollMagic.Controller();
   new ScrollMagic.Scene({
    triggerElement: ".feature-hero-main .feature-hero-main",
-   duration: 750,
+   duration: 660,
   })
   .setPin(".feature-hero .feature-hero-main h1")
+  // .addIndicators()
   .addTo(hero);
 });
   

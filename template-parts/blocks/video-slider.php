@@ -1,11 +1,7 @@
 <section class="video-slider-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-10">
-        <h3 data-aos="fade-up"><?php the_field('video_slider_title') ?></h3>
-      </div>
-    </div>
-  </div>
+
+  <h3 data-aos="fade-up"><?php the_field('video_slider_title') ?></h3>
+  
   <div class="video-slider">
     <?php if (have_rows('video_slider')) : while (have_rows('video_slider')) : the_row(); ?>
       <?php 
