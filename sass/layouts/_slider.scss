@@ -1,0 +1,45 @@
+.hero-slider {
+  display: flex;
+	min-height: 650px;
+  left: 0;
+  max-width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute !important;
+  top: 8.5rem;
+  transition: 1s ease-in;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+
+  &:before {
+    background-color: #111;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &.slick-initialized {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &-image {
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .slick-slide {
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+}

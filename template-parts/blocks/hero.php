@@ -1,6 +1,14 @@
 <?php $fhero = get_field('hero_image') ?>
 
-  <div class="feature-hero" style="background-image: url(<?php echo $fhero['url'] ?>);">
+  <div class="feature-hero">
+    <div class="feature-hero-slider">
+    <?php if (have_rows('hero_slider')) : while (have_rows('hero_slider')) : the_row(); ?>
+    <?php $img = get_sub_field('image') ?>
+    <div>
+      <figure style="background-image: url(<?php echo $img['url'] ?>);"></figure>
+    </div>
+    <?php endwhile; endif; ?>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col">

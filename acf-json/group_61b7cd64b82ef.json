@@ -1,6 +1,6 @@
 {
     "key": "group_61b7cd64b82ef",
-    "title": "Cards",
+    "title": "Footer Cards",
     "fields": [
         {
             "key": "field_61b7ce085e87e",
@@ -17,7 +17,7 @@
             },
             "collapsed": "",
             "min": 0,
-            "max": 0,
+            "max": 3,
             "layout": "block",
             "button_label": "Add Card",
             "sub_fields": [
@@ -55,8 +55,8 @@
                     },
                     "default_value": "",
                     "tabs": "all",
-                    "toolbar": "basic",
-                    "media_upload": 0,
+                    "toolbar": "full",
+                    "media_upload": 1,
                     "delay": 0
                 },
                 {
@@ -98,6 +98,13 @@
                 "operator": "==",
                 "value": "acf\/cards"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-strategy.php"
+            }
         ]
     ],
     "menu_order": 5,
@@ -109,5 +116,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640206768
+    "modified": 1644499796
 }

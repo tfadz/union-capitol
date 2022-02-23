@@ -12,19 +12,37 @@ jQuery(function($) {
     });
   };
 	
+	
 	function hero () {
     $('.content-block .headline').each(function() {
       $(this).css('top', $('.feature-hero h1').offset().top - $(this).closest('.marvin').offset().top);
     });
   };
+	
+	
+	function contentList () {
+		$('.content-list-section h2.headline').each(function() {
+			$(this).css('top',$('.feature-hero.secondary h1').offset().top - $(this).closest('.content-list-section').offset().top);
+		});
+	};
+	
+	function contentIndustry () {
+		$('.content-industry-section h2.headline').each(function() {
+			$(this).css('top',$('.feature-hero.secondary h1').offset().top - $(this).closest('.content-industry-section').offset().top);
+		});
+	};
 
   $(document).scroll(function() {
     homeHero();
-		imageTwoCol(); 
+		imageTwoCol();
 		hero();
+		contentList();
+		contentIndustry(); 
   });
 
   homeHero();
 	imageTwoCol();
 	hero();
+	contentList();
+	contentIndustry();
 });

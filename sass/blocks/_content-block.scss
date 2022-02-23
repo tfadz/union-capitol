@@ -4,18 +4,64 @@
   position: relative;
   width: 100%;
 
+  @media (max-width: $small) {
+    min-height: 400px;
+  }
+
   &-wrapper {
     min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: $small) {
+      min-height: 400px;
+    }
   }
 
   .headline {
     top: 0;
     left: auto;
-    max-width: 700px;
     z-index: 99;
     position: relative;
+  }
+
+  &-stats {
+    display: flex;
+    padding: 0 0 6rem 0;
+    margin: 0;
+
+    @media (max-width: $small) {
+      display: block;
+      padding-top: 2rem;
+    }
+
+    li {
+      display: block;
+      flex: 1;
+      text-align: center;
+
+      @media (max-width: $small) {
+        padding-bottom: 3rem;
+        text-align: left;
+      }
+
+      h3 {
+        color: $green;
+      }
+
+      span {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        line-height: 1.2;
+        font-size: 1.25rem;
+        font-weight: $regular-medium;
+        @media (max-width: $small) {
+          margin: 0;
+        }
+
+      }
+    }
   }
 }

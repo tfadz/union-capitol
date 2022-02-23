@@ -13,20 +13,20 @@
 <footer id="colophon" class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-9">
+      <div class="col-md-9">
       <div class="footer-primary">
         <div class="footer-primary-content"><?php the_field('footer_content', 'options') ?></div>
         <a href="/contact" class="button">LET'S TALK</a>
       </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-md-3">
         <a target="_blank" class="linkedin" href="https://www.linkedin.com/company/unioncapitalassociatesllc/"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.svg" alt="" /></a>
       </div>
     </div>
     <div class="row">
       <div class="col">
         <div class="footer-legal">
-          &copy; <?php echo date('Y'); ?><?php echo get_bloginfo(); ?>  | <a href="#">Privacy Policy</a>
+          &copy; <?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>  | <a href="/privacy-policy">Privacy Policy</a>
         </div>
       </div>
     </div>

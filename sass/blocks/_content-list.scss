@@ -1,31 +1,48 @@
 .content-list {
-  margin-right: -4rem;
-  margin-left: -4rem;
+  @media (min-width: 769px) {
+    margin-right: -4rem;
+    margin-left: -4rem;
 
-  & > .col,
-  & > [class*="col-"] {
-    padding-right: 4rem;
-    padding-left: 4rem;
-    padding-bottom: 2rem;
+    & > .col,
+    & > [class*="col-"] {
+      padding-right: 4rem;
+      padding-left: 4rem;
+      padding-bottom: 2rem;
+    }
   }
+  @media (max-width: $small) {
+    .col-md-6 {
+      padding-bottom: 2rem;
+    }
+  }
+
 
   &-main {
     padding-bottom: 4rem;
+    margin-top: 4rem;
   }
-	
-	&-text {
-		max-width: 850px;
-	}
+
+  &-text {
+    max-width: 850px;
+    padding-top: 3rem;
+  }
 
   &-section {
-    padding: 4rem 0;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 
     h2 {
       color: $blue;
+      left: auto;
+      z-index: 99;
+      position: relative;
     }
   }
 
   h3 {
     color: $black;
+    font-family: $primary-font;
   }
 }

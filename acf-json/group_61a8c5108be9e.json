@@ -6,7 +6,7 @@
             "key": "field_61a8c53357bcc",
             "label": "Title",
             "name": "home_hero_title",
-            "type": "text",
+            "type": "textarea",
             "instructions": "Override default title",
             "required": 0,
             "conditional_logic": 0,
@@ -17,9 +17,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": "br"
         },
         {
             "key": "field_61a8c51357bcb",
@@ -64,5 +64,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640129148
+    "modified": 1645199499
 }

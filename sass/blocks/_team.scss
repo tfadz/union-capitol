@@ -9,7 +9,7 @@
       margin-bottom: 4rem;
 
       .featured-img {
-        height: 300px;
+        height: 280px;
         margin-bottom: 2rem;
       }
 
@@ -25,7 +25,6 @@
 }
 
 .single-team_members {
-  
   li#menu-item-19 {
     > a {
       color: $black;
@@ -33,6 +32,7 @@
       border-bottom: 3px solid $green;
     }
   }
+
   .team_members {
     padding-bottom: 4rem;
   }
@@ -41,6 +41,7 @@
     h1 {
       padding-bottom: 0;
     }
+
     h3 {
       padding-top: .5rem;
     }
@@ -51,9 +52,17 @@
     padding-bottom: 4rem;
     padding-top: 1.5rem;
 
+    @media (max-width: $small) {
+      display: block;
+    }
+
     figure {
       width: 100%;
       max-width: 388px;
+
+      @media (max-width: $small) {
+        max-width: 100%;
+      }
 
       img {
         width: 100%;
@@ -73,6 +82,10 @@
 
     .bio-primary {
       margin-left: 4rem;
+
+      @media (max-width: $small) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -80,6 +93,10 @@
     background: $yellow;
     padding: 4rem 4rem 3rem 4rem;
     margin-bottom: 4rem;
+
+    @media (max-width: $small) {
+      padding: 2rem 1rem 2rem 1rem;
+    }
 
     h5 {
       color: $blue;

@@ -3,6 +3,10 @@
   padding: 4rem 0;
   margin-top: 8rem;
 
+  @media (max-width: $small) {
+    padding-bottom: 1rem;
+  }
+
   .et-horizontal-timeline {
     .bx-wrapper .bx-viewport {
       background: none;
@@ -10,6 +14,10 @@
 
     .et-content-block {
       display: flex;
+
+      @media (max-width: $small) {
+        display: block;
+      }
 
       .et-title {
         display: none;
@@ -24,12 +32,20 @@
         color: $black;
         font-family: $primary-font;
         padding-left: 5rem;
+
+        @media (max-width: $small) {
+          padding-left: 0;
+        }
       }
     }
 
     .et-hor-timeline-date {
       > li > a {
         padding: 0 4rem;
+
+        @media (max-width: $small) {
+          padding: 0 2rem;
+        }
 
         .et-horiz-title {
           opacity: 0;
@@ -125,7 +141,7 @@
             font-family: "Font Awesome 5 Pro";
             font-weight: 900;
             content: "\f0d9";
-						height: 27px;
+            height: 27px;
             font-size: 2rem;
             color: $white;
             display: block;
@@ -138,7 +154,7 @@
         &.bx-next {
           &:before {
             content: "\f0da";
-						left: 2px;
+            left: 2px;
           }
         }
       }

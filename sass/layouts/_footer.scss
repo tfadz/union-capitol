@@ -9,10 +9,18 @@
   &-primary {
     padding-bottom: 5rem;
 
+    @media (max-width: $small) {
+      padding-bottom: 2rem;
+    }
+
     &-content {
       h2 {
         font-size: 2.9375rem;
         color: $white;
+
+        @media (max-width: $small) {
+          font-size: 2rem;
+        }
       }
 
       padding-bottom: .5rem;
@@ -23,16 +31,28 @@
     font-size: 0.875rem;
     color: $gray;
 
+    @media (max-width: $small) {
+      padding-top: 1rem;
+    }
+
     a {
       color: $gray;
       text-decoration: none;
     }
   }
-  
+
   .linkedin {
     position: absolute;
     right: 6rem;
     bottom: 3rem;
+
+    @media (max-width: $small) {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      padding-bottom: 2rem;
+    }
+
     img {
       width: 3rem;
     }

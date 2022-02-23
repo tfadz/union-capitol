@@ -27,21 +27,20 @@ h1, .h1 {
   color: $blue;
   font-size: 4.875rem;
   line-height: 1;
-  
+
   &.alt {
     // 70px
     font-size: 4.375rem;
+
+    @media (max-width: $small) {
+      font-size: 3.25rem;
+      line-height: 1;
+    }
   }
 
   @media (max-width: $small) {
-    // 43px
-    font-size: 2.6875rem;
-    line-height: 1.2;
-  }
-
-  @media (max-width: $xsmall) {
-    // 35px
-    font-size: 2.1875rem;
+    font-size: 3.25rem;
+    line-height: 1;
   }
 }
 
@@ -53,14 +52,8 @@ h2, .h2 {
   padding-bottom: 3rem;
 
   @media (max-width: $small) {
-    // 43px
-    font-size: 2.6875rem;
-    line-height: 1.2;
-  }
-
-  @media (max-width: $xsmall) {
-    // 35px
-    font-size: 2.1875rem;
+    font-size: 3.25rem;
+    line-height: 1;
   }
 }
 
@@ -70,7 +63,7 @@ h3, .h3 {
   line-height: 1.3;
 
   @media (max-width: $small) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.875rem;
   }
 }
@@ -90,6 +83,11 @@ h4, .h4 {
     // 47px
     font-size: 2.9375rem;
     line-height: 1.3;
+
+    @media (max-width: $small) {
+      font-size: 2rem;
+      line-height: 1.1;
+    }
   }
 }
 

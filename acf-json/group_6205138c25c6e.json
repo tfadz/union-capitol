@@ -1,36 +1,36 @@
 {
-    "key": "group_61c27bcf73b89",
-    "title": "Hero Secondary",
+    "key": "group_6205138c25c6e",
+    "title": "Strategy Graphic Block",
     "fields": [
         {
-            "key": "field_61c27dd0959a9",
-            "label": "Title",
-            "name": "hero_sec_title",
-            "type": "textarea",
+            "key": "field_620513a0c93f1",
+            "label": "Content",
+            "name": "sgb_block",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "60",
+                "width": "",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 3,
-            "new_lines": "br"
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
-            "key": "field_61c27dd8959aa",
-            "label": "Image",
-            "name": "hero_sec_image",
+            "key": "field_6206d6e18fbd9",
+            "label": "Graphic",
+            "name": "sgb_graphic",
             "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "40",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -51,18 +51,11 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-about.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
                 "value": "page-strategy.php"
             }
         ]
     ],
-    "menu_order": 4,
+    "menu_order": 3,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -71,5 +64,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644282839
+    "modified": 1644615409
 }

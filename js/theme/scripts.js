@@ -2,6 +2,7 @@ var unionFunctions = (function($) {
 
   var init = function() {
     videoSlider();
+    heroSlider();
     mobileMenu();
     modals();
     tabs();
@@ -10,6 +11,23 @@ var unionFunctions = (function($) {
   
   tabs = function() {
     $('.nav.nav-tabs > li:first-child > a').addClass('active');
+  }
+  
+  heroSlider = function() {
+    $('.feature-hero-slider').slick({
+      autoplay: true,
+      arrows: false,
+      autoplaySpeed: 4500,
+      dots: false,
+      infinite: true,
+      lazyLoad: 'ondemand',
+      speed: 700,
+      fade: true,
+      cssEase: 'ease-out',
+      centerMode: false,
+      swipeToSlide: true,
+      swipe: true
+    });
   }
 
   videoSlider = function() {
@@ -90,16 +108,16 @@ var unionFunctions = (function($) {
   },
   
   header = function() {
-    var previousScroll = 0; 
-    $(window).scroll(function(event) {   
-      var scroll = $(this).scrollTop();
-        if (scroll > 120 && scroll < previousScroll) {
-          $(".site-header").addClass("fixed");
-        }else{
-          $(".site-header").removeClass("fixed");
-        }
-        previousScroll = scroll;
-    });
+    // var previousScroll = 0; 
+    // $(window).scroll(function(event) {   
+    //   var scroll = $(this).scrollTop();
+    //     if (scroll > 120 && scroll < previousScroll) {
+    //       $(".site-header").addClass("fixed");
+    //     }else{
+    //       $(".site-header").removeClass("fixed");
+    //     }
+    //     previousScroll = scroll;
+    // });
   }
   
   AOS.init({
