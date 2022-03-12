@@ -31,6 +31,12 @@ jQuery(function($) {
 			$(this).css('top',$('.feature-hero.secondary h1').offset().top - $(this).closest('.content-industry-section').offset().top);
 		});
 	};
+	
+	function contentBusiness () {
+		$('.content-business-section h2.headline').each(function() {
+			$(this).css('top',$('.feature-hero.secondary h1').offset().top - $(this).closest('.content-business-section').offset().top);
+		});
+	};
 
   $(document).scroll(function() {
     homeHero();
@@ -38,6 +44,7 @@ jQuery(function($) {
 		hero();
 		contentList();
 		contentIndustry(); 
+		contentBusiness(); 
   });
 
   homeHero();
@@ -45,4 +52,5 @@ jQuery(function($) {
 	hero();
 	contentList();
 	contentIndustry();
+	contentBusiness();
 });

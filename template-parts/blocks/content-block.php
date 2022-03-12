@@ -39,6 +39,7 @@
       <div class="row">
         <div class="col-sm-12">
           <?php if(get_field('content_block_stats')) : ?>
+            <?php $bgc = get_field('content_block_stats_bg') ?>
             <ul class="content-block-stats">
               <?php if (have_rows('content_block_stats')) : while (have_rows('content_block_stats')) : the_row(); ?>
                 <li><h3><?php the_sub_field('title') ?></h3><span><?php the_sub_field('text') ?></span></li>
@@ -49,3 +50,18 @@
       </div>
     </div>
   </section>
+  
+  <?php if($bgc) : ?>
+  <style>
+  .content-block-stats {
+    background: <?php echo $bgc; ?>;
+    color: white;
+    width:100vw;
+ position:relative;
+ left:calc(-1 * (100vw - 100%)/2);
+  }
+  .content-block-stats h3 {
+    color: #76a465;
+  }
+  </style>
+  <?php endif; ?>

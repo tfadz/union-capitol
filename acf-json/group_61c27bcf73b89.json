@@ -60,6 +60,13 @@
                 "operator": "==",
                 "value": "page-strategy.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-business.php"
+            }
         ]
     ],
     "menu_order": 4,
@@ -71,5 +78,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644282839
+    "modified": 1646088612
 }

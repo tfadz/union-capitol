@@ -1,0 +1,29 @@
+.content-business {
+	&-section {
+		background: #faf6e7;
+		min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 5vh;
+		padding-bottom: 2rem;
+	}
+	
+	&-text {
+		padding-top: 4rem;
+	}
+	
+	&-list {
+		display: flex;
+		
+		li {
+			flex: 1;
+			border-top: 1px solid $green;
+			padding-top: 1rem;
+			margin: 0 1rem;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}

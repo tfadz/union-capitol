@@ -2,6 +2,7 @@ var unionFunctions = (function($) {
 
   var init = function() {
     videoSlider();
+    homeHeroSlider();
     heroSlider();
     mobileMenu();
     modals();
@@ -12,6 +13,24 @@ var unionFunctions = (function($) {
   tabs = function() {
     $('.nav.nav-tabs > li:first-child > a').addClass('active');
   }
+  
+  homeHeroSlider = function() {
+    $('.home-hero-slider').slick({
+      autoplay: true,
+      arrows: false,
+      autoplaySpeed: 4500,
+      dots: false,
+      infinite: true,
+      lazyLoad: 'ondemand',
+      speed: 700,
+      fade: true,
+      cssEase: 'ease-out',
+      centerMode: false,
+      swipeToSlide: true,
+      swipe: true
+    });
+  }
+  
   
   heroSlider = function() {
     $('.feature-hero-slider').slick({

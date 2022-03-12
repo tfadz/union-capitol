@@ -1,4 +1,3 @@
-<?php $fhero = get_field('hero_image') ?>
 
   <div class="feature-hero">
     <div class="feature-hero-slider">

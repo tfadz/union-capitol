@@ -16,11 +16,18 @@
 </div>
 
 
-<div class="hero-row hero-img" style="background-image: url(<?php echo $heroimg['url'] ?>);">
+<div class="hero-row hero-img">
+  <div class="home-hero-slider">
+    <?php if (have_rows('home_carousel')) : while (have_rows('home_carousel')) : the_row(); ?>
+    <?php $img = get_sub_field('image') ?>
+    <div>
+      <figure style="background-image: url(<?php echo $img['url'] ?>);"></figure>
+    </div>
+    <?php endwhile; endif; ?>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col">
-
         <h1 class="headline headline-change">
           <?php if(get_field('home_hero_title')) : ?>
             <?php the_field('home_hero_title') ?>

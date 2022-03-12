@@ -293,6 +293,23 @@
                     "new_lines": "br"
                 }
             ]
+        },
+        {
+            "key": "field_621d4ebe069dc",
+            "label": "Background Color",
+            "name": "content_block_stats_bg",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
         }
     ],
     "location": [
@@ -330,6 +347,20 @@
                 "operator": "==",
                 "value": "page-strategy.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-portfolio.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-business.php"
+            }
         ]
     ],
     "menu_order": 2,
@@ -341,5 +372,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644373361
+    "modified": 1646087898
 }

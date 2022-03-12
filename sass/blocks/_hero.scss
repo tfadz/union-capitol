@@ -30,17 +30,28 @@
   width: 100%;
 
   @media (max-width: $small) {
-    min-height: 350px;
-    background-attachment: initial;
+    height: 350px;
   }
 
   &-slider {
     position: absolute !important;
-    height: 650px;
+    height: 100%;
     top: 0;
     left: 0;
     width: 100%;
     z-index: -1;
+
+    @media (max-width: $small) {
+      height: 350px;
+    }
+
+    .slick-list {
+      height: 650px;
+
+      @media (max-width: $small) {
+        height: 350px;
+      }
+    }
 
     figure {
       background-repeat: no-repeat;
@@ -54,6 +65,12 @@
       left: 0;
       height: 650px;
       width: 100%;
+
+      @media (max-width: $small) {
+        height: 350px;
+        background-attachment: initial;
+        background-position: center;
+      }
 
       &:before {
         background-color: #111;
@@ -91,14 +108,22 @@
     z-index: 99;
     animation: .8s fadeInUp forwards;
     animation-delay: .5s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    
 
     @media (max-width: $small) {
       padding-right: 1rem;
       line-height: 1.1;
+      padding-top: 10vh;
     }
   }
 
   &.secondary {
+    background-size: cover;
+    background-position: center;
     h1 {
       animation: none;
       animation-delay: none;
@@ -133,6 +158,10 @@
     color: $blue;
     animation: .8s fadeInUp forwards;
     animation-delay: .5s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
 
   &.headline-change {
@@ -142,18 +171,73 @@
     // This is to hide the text on page load and then show
     animation: .2s fadeIn forwards;
     animation-delay: .5s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+
   }
 }
 
 .hero-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 650px;
+  height: 650px;
 
   @media (max-width: $small) {
-    min-height: 350px;
-    background-attachment: initial;
+    height: 350px;
+  }
+
+  .home-hero-slider {
+    position: absolute !important;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+    @media (max-width: $small) {
+      height: 350px;
+    }
+
+    .slick-list {
+      height: 650px;
+
+      @media (max-width: $small) {
+        height: 350px;
+      }
+    }
+
+    figure {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 100px;
+      background-attachment: fixed;
+      overflow: hidden;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 650px;
+      width: 100%;
+
+      @media (max-width: $small) {
+        height: 350px;
+        background-attachment: initial;
+        background-position: center;
+      }
+
+      // &:before {
+      //   background-color: #111;
+      //   content: "";
+      //   height: 100%;
+      //   left: 0;
+      //   opacity: .2;
+      //   position: absolute;
+      //   top: 0;
+      //   width: 100%;
+      //   z-index: 1;
+      // }
+   
+    }
   }
 }

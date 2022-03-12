@@ -24,11 +24,13 @@
     left: auto;
     z-index: 99;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
   }
 
   &-stats {
     display: flex;
-    padding: 0 0 6rem 0;
+    padding: 6rem 0 6rem 0;
     margin: 0;
 
     @media (max-width: $small) {
