@@ -146,6 +146,7 @@ var unionFunctions = (function($) {
 	  easing: 'ease-in-out',
 	  delay: 50
   })
+  
 
 return {
   init:init

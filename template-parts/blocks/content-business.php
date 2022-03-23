@@ -11,6 +11,11 @@
             <li><?php the_sub_field('text') ?></li>
           <?php endwhile; endif; ?>
         </ul>
+        <?php $cta_link = get_field('cbb_ctalink') ?>
+        <?php if($cta_link) :  ?>
+          <br />
+        <a class="button button-secondary" href="<?php echo $cta_link['url'] ?>"><?php the_field('cbb_cta') ?> <img src="<?php bloginfo('template_directory'); ?>/images/right-arrow--gray.svg" alt=""></a>
+      <?php endif; ?>
       </div>
     </div>
   </div>

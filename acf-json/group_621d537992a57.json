@@ -79,6 +79,40 @@
                     "new_lines": "br"
                 }
             ]
+        },
+        {
+            "key": "field_6231e2034198f",
+            "label": "CTA",
+            "name": "cbb_cta",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6231e21041990",
+            "label": "CTA Link",
+            "name": "cbb_ctalink",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -99,5 +133,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646240672
+    "modified": 1647436321
 }

@@ -62,16 +62,43 @@ jQuery(function($) {
   
   
   // Hero - Desktop Hero Settings
+  // if (window.matchMedia('(min-width: 769px)').matches) {
+  // 
+  //   var hero = new ScrollMagic.Controller();
+  //   new ScrollMagic.Scene({
+  //    triggerElement: ".feature-hero-main",
+  //    duration: "90%",
+  //   })
+  //   .setPin(".feature-hero .feature-hero-main h1")
+  //   // .addIndicators()
+  //   .addTo(hero);
+  // }
+  
   if (window.matchMedia('(min-width: 769px)').matches) {
-
-    var hero = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-     triggerElement: ".feature-hero-main",
-     duration: 660,
-    })
-    .setPin(".feature-hero .feature-hero-main h1")
-    // .addIndicators()
-    .addTo(hero);
+    var $bp = $('.page-template-page-business');
+    if($bp[0]) {
+      var hero = new ScrollMagic.Controller();
+      new ScrollMagic.Scene({
+       triggerElement: ".feature-hero-main",
+       duration: "100%",
+      })
+      .setPin(".feature-hero .feature-hero-main h1")
+      // .addIndicators()
+      .addTo(hero);
+    }
+    
+    else {
+      var hero = new ScrollMagic.Controller();
+      new ScrollMagic.Scene({
+       triggerElement: ".feature-hero-main",
+       duration: "90%",
+      })
+      .setPin(".feature-hero .feature-hero-main h1")
+      // .addIndicators()
+      .addTo(hero);
+      
+    }
+    
   }
   
   // Hero - Mobile Hero Settings
