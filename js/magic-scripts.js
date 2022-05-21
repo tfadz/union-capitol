@@ -1,6 +1,48 @@
 jQuery(function($) {
+  
+  if (window.matchMedia('(min-width: 769px)').matches) {
+    var $bp = $('.page-template-page-business');
+    var $sp = $('.page-template-page-strategy');
+    var $tp = $('.page-template-page-team');
+    
+    if($bp[0]) {
+      var hero = new ScrollMagic.Controller();
+      new ScrollMagic.Scene({
+       triggerElement: ".feature-hero-main",
+       duration: $('.content-block-wrapper').outerHeight(true) - 40,
+      })
+      .setPin(".feature-hero .feature-hero-main h1")
+      // .addIndicators()
+      .addTo(hero);
+    }
+    
+    else if($sp[0]) {
+      var hero = new ScrollMagic.Controller();
+      new ScrollMagic.Scene({
+       triggerElement: ".feature-hero-main",
+       duration: $('.content-block-wrapper').outerHeight(true) + 140,
+      })
+      .setPin(".feature-hero .feature-hero-main h1")
+      // .addIndicators()
+      .addTo(hero);
+    }
+    
+    else {
+      var hero = new ScrollMagic.Controller();
+      new ScrollMagic.Scene({
+       triggerElement: ".feature-hero-main",
+       duration: $('.content-block-wrapper').outerHeight(true) + 50,
+       
+      })
+      .setPin(".feature-hero .feature-hero-main h1")
+      // .addIndicators()
+      .addTo(hero);
+      
+    }
+    
+  }
   						
-  // Desktop Settings
+  // Homepage Hero Desktop Settings
   if (window.matchMedia('(min-width: 769px)').matches) {
 
   var controller = new ScrollMagic.Controller();
@@ -12,7 +54,7 @@ jQuery(function($) {
   .setPin(".headline-start")
   .addTo(controller);
 }
-  
+
   // Mobile Settings
   if (window.matchMedia('(max-width: 768px)').matches) {
 
@@ -61,45 +103,8 @@ jQuery(function($) {
   
   
   
-  // Hero - Desktop Hero Settings
-  // if (window.matchMedia('(min-width: 769px)').matches) {
-  // 
-  //   var hero = new ScrollMagic.Controller();
-  //   new ScrollMagic.Scene({
-  //    triggerElement: ".feature-hero-main",
-  //    duration: "90%",
-  //   })
-  //   .setPin(".feature-hero .feature-hero-main h1")
-  //   // .addIndicators()
-  //   .addTo(hero);
-  // }
   
-  if (window.matchMedia('(min-width: 769px)').matches) {
-    var $bp = $('.page-template-page-business');
-    if($bp[0]) {
-      var hero = new ScrollMagic.Controller();
-      new ScrollMagic.Scene({
-       triggerElement: ".feature-hero-main",
-       duration: "100%",
-      })
-      .setPin(".feature-hero .feature-hero-main h1")
-      // .addIndicators()
-      .addTo(hero);
-    }
-    
-    else {
-      var hero = new ScrollMagic.Controller();
-      new ScrollMagic.Scene({
-       triggerElement: ".feature-hero-main",
-       duration: "90%",
-      })
-      .setPin(".feature-hero .feature-hero-main h1")
-      // .addIndicators()
-      .addTo(hero);
-      
-    }
-    
-  }
+
   
   // Hero - Mobile Hero Settings
   if (window.matchMedia('(max-width: 768px)').matches) {

@@ -1,10 +1,15 @@
 .portfolio {
   &-section {
     padding: 1rem 0 3rem 0;
+
+    @media (min-width: 769px) {
+      margin-top: -2rem;
+    }
   }
 
   &-filter {
     display: flex;
+    margin-bottom: 2rem;
 
     .facetwp-facet {
       display: block;
@@ -53,32 +58,43 @@
     .facetwp-template {
       display: flex;
       flex-wrap: wrap;
-
-      @media (min-width: 769px) {
-        margin-right: -10px;
-        margin-left: -10px;
-      }
-
-      .col-md-3 {
-        @media (min-width: 769px) {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-      }
+      padding-bottom: 2rem;
+      width: 100%;
+      margin-left: -1.5rem;
     }
   }
 
   .post {
     display: block;
-    background: #e3e3e3;
+    background: rgba($gray, 0.2);
     text-decoration: none;
-    border: 1px solid #8b8a8a;
-    min-height: 415px;
-    margin-bottom: 1.2rem;
+    min-height: 250px;
+    margin-bottom: 3rem;
+    min-width: 285px;
+    width: calc(24% - 25px);
+    margin-left: 25px;
+    
+    @media (max-width: 900px) {
+      min-width: 285px;
+      width: calc(50% - 25px);
+      margin-left: 25px;
+    }
+    
+    @media (max-width: $small) {
+      min-width: 200px;
+      width: calc(50% - 20px);
+      margin-left: 20px;
+    }
+
 
     &-main {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+      justify-content: center;
       padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-top: 12px solid $green;
 
       p:last-child {
         padding-bottom: 0;
@@ -94,15 +110,26 @@
       justify-content: center;
     }
 
-    h4, p {
-      font-family: $primary-font;
-      font-size: 1rem;
+    h3 {
+      color: $blue;
+      font-size: 1.45rem;
       text-decoration: none;
+      font-weight: $bold;
     }
 
     h4 {
-      text-transform: uppercase;
+      font-size: 1.45rem;
+      text-decoration: none;
       font-weight: $bold;
+    }
+
+    p {
+      font-weight: $regular;
+      font-size: 1.25rem;
+
+      strong {
+        color: $blue;
+      }
     }
   }
 }

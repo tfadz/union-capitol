@@ -21,7 +21,7 @@
     <?php if (have_rows('home_carousel')) : while (have_rows('home_carousel')) : the_row(); ?>
     <?php $img = get_sub_field('image') ?>
     <div>
-      <figure style="background-image: url(<?php echo $img['url'] ?>);"></figure>
+      <img src="<?php echo $img['url'] ?>" alt="" />
     </div>
     <?php endwhile; endif; ?>
   </div>

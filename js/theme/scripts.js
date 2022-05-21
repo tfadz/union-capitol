@@ -39,7 +39,7 @@ var unionFunctions = (function($) {
       autoplaySpeed: 4500,
       dots: false,
       infinite: true,
-      lazyLoad: 'ondemand',
+      lazyLoad: 'progressive',
       speed: 700,
       fade: true,
       cssEase: 'ease-out',

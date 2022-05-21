@@ -15,7 +15,7 @@
               </div>
               <div id="menu1" class="tab-pane">
                 
-                <p>Union Capital started with Jim Marlas and his vision to invest in small and mid-sized companies that traditional private equity firms often overlook. We believe in partnership and working together. Our approach is based on mutual respect, integrity and trust. </p>
+                <p>Union Capital started with Jim Marlas and his vision to invest in small and mid-sized companies that traditional private equity firms often overlook. We believe in partnership and working together. Our approach is based on mutual respect, integrity, and trust.</p>
               </div>
               
             </div>

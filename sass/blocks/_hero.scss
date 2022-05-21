@@ -34,12 +34,20 @@
   }
 
   &-slider {
-    position: absolute !important;
     height: 100%;
-    top: 0;
     left: 0;
+    position: absolute !important;
+    top: 0;
     width: 100%;
     z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+
+    &.slick-initialized {
+      visibility: visible;
+      opacity: 1;
+    }
 
     @media (max-width: $small) {
       height: 350px;
@@ -51,6 +59,12 @@
       @media (max-width: $small) {
         height: 350px;
       }
+    }
+
+    img {
+      height: 650px;
+      object-fit: cover;
+      width: 100%;
     }
 
     figure {
@@ -107,12 +121,11 @@
     width: 100%;
     z-index: 99;
     animation: .8s fadeInUp forwards;
-    animation-delay: .5s;
+    animation-delay: 1s;
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    
 
     @media (max-width: $small) {
       padding-right: 1rem;
@@ -124,6 +137,7 @@
   &.secondary {
     background-size: cover;
     background-position: center;
+
     h1 {
       animation: none;
       animation-delay: none;
@@ -170,13 +184,11 @@
 
     // This is to hide the text on page load and then show
     animation: .2s fadeIn forwards;
-    animation-delay: .5s;
+    animation-delay: 2s;
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -webkit-transform: translate3d(0,0,0);
-
+    -webkit-transform: translate3d(0, 0, 0);
   }
 }
 
@@ -188,12 +200,20 @@
   }
 
   .home-hero-slider {
-    position: absolute !important;
     height: 100%;
-    top: 0;
     left: 0;
+    opacity: 0;
+    position: absolute !important;
+    top: 0;
+    transition: opacity 1s ease;
+    visibility: hidden;
     width: 100%;
     z-index: -1;
+
+    &.slick-initialized {
+      visibility: visible;
+      opacity: 1;
+    }
 
     @media (max-width: $small) {
       height: 350px;
@@ -207,10 +227,18 @@
       }
     }
 
+    img {
+      height: 650px;
+      object-fit: cover;
+      width: 100%;
+    }
+
     figure {
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 50% 100px;
+
+      // background-position: 50% 100px;
+      background-size: cover;
       background-attachment: fixed;
       overflow: hidden;
       margin: 0;

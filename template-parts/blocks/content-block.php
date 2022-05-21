@@ -57,8 +57,8 @@
     background: <?php echo $bgc; ?>;
     color: white;
     width:100vw;
- position:relative;
- left:calc(-1 * (100vw - 100%)/2);
+    position:relative;
+    left:calc(-1 * (100vw - 100%)/2);
   }
   .content-block-stats h3 {
     color: #76a465;

@@ -10,10 +10,18 @@
 
 .image-two-col {
   position: relative;
-  background: linear-gradient(to left, $yellow 50%, $white 50%);
+  background: linear-gradient(to left, $yellow 0 40%, $white 0 60%);
+
+  @media (max-width: 1200px) {
+    background: linear-gradient(to top, $yellow 0 25%, $white 0 75%);
+  }
 
   @media (max-width: $small) {
-    background: $white;
+    background: linear-gradient(to top, $yellow 0 35%, $white 0 65%);
+  }
+
+  @media (max-width: $xsmall) {
+    background: linear-gradient(to top, $yellow 0 32%, $white 0 68%);
   }
 
   &__media {
@@ -51,8 +59,21 @@
     position: relative;
     width: 100%;
 
+    p {
+      @media (min-width: 1201px) {
+        max-width: 650px;
+      }
+    }
+
     @media (max-width: $small) {
       min-height: 0;
+    }
+
+    @media (max-width: 1200px) {
+      .left {
+        max-width: 100%;
+        flex: none;
+      }
     }
 
     h2 {
@@ -62,6 +83,13 @@
       z-index: 99;
       position: relative;
       color: $blue;
+    }
+  }
+
+  &__facts {
+    @media (max-width: 1200px) {
+      max-width: 100%;
+      flex: none;
     }
   }
 
@@ -90,21 +118,38 @@
       display: flex;
       list-style: none;
       flex-wrap: wrap;
-      padding: 0 0 0 3rem;
+      padding: 0;
+      margin-top: -1rem;
+
+      @media (max-width: 1200px) {
+        position: relative;
+        padding-left: 0;
+        max-width: 100%;
+        flex: none;
+      }
 
       @media (max-width: $small) {
         padding: 0;
+        margin-top: 0;
+        right: 0;
       }
 
       li {
         width: 50%;
-        padding: 0 1.5rem 3rem 2rem;
+        padding: 0 1.25rem 3rem 0;
+
+        @media (min-width: 1366px) {
+          &:nth-child(2), &:nth-child(4) {
+            position: relative;
+            left: 1rem;
+          }
+        }
 
         @media (max-width: $small) {
-          padding: 0 0 2rem 0;
+          padding-bottom: 1rem;
 
-          &:nth-child(2), &:nth-child(4) {
-            padding-left: 2rem;
+          &:first-child, &:nth-child(2) {
+            padding-bottom: 2rem;
           }
         }
 
@@ -119,7 +164,7 @@
 
         span {
           display: block;
-          font-size: 1.2rem;
+          font-size: 1.15rem;
           line-height: 1.2;
         }
       }

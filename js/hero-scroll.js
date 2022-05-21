@@ -15,9 +15,15 @@ jQuery(function($) {
 	
 	function hero () {
     $('.content-block .headline').each(function() {
-      $(this).css('top', $('.feature-hero h1').offset().top - $(this).closest('.marvin').offset().top);
+      $(this).css('top', $('.feature-hero h1').offset().top  - $(this).closest('.marvin').offset().top);
     });
   };
+	
+	// function heroTeam () {
+  //   $('.page-template-page-team .content-block .headline').each(function() {
+  //     $(this).css('top', $('.feature-hero h1').offset().top - $(this).closest('.marvin').offset().top);
+  //   });
+  // };
 	
 	
 	function contentList () {
@@ -42,6 +48,7 @@ jQuery(function($) {
     homeHero();
 		imageTwoCol();
 		hero();
+		heroTeam();
 		contentList();
 		contentIndustry(); 
 		contentBusiness(); 
@@ -50,6 +57,7 @@ jQuery(function($) {
   homeHero();
 	imageTwoCol();
 	hero();
+	heroTeam();
 	contentList();
 	contentIndustry();
 	contentBusiness();

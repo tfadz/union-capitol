@@ -19,12 +19,12 @@
     </div>
     <div class="container">
       <div class="row no-gutters">
-        <div class="col-md-6">
+        <div class="col-12 col-md-12 col-lg-8 left">
         <article class="primary">
             <?php the_field('image_two_col_primary') ?>
         </article>
         </div>
-        <div class="col-md-6">
+        <div class="col-12 col-md-12 col-lg-4 image-two-col__facts">
         <article class="secondary" data-aos="fade-up" data-aos-delay="200">
           <ul class="secondary-facts">
           <?php if (have_rows('image_two_col_facts')) : while (have_rows('image_two_col_facts')) : the_row(); ?>

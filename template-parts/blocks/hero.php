@@ -4,7 +4,7 @@
     <?php if (have_rows('hero_slider')) : while (have_rows('hero_slider')) : the_row(); ?>
     <?php $img = get_sub_field('image') ?>
     <div>
-      <figure style="background-image: url(<?php echo $img['url'] ?>);"></figure>
+      <img src="<?php echo $img['url'] ?>" alt="" />
     </div>
     <?php endwhile; endif; ?>
     </div>

@@ -3,15 +3,15 @@
 
 <section class="portfolio-section">
   <div class="container portfolio">
+      <div class="row">
     <?php global $post; ?>
     <section class="portfolio-section">
       <div class="container">
         <div class="row">
         <div class="col-sm-12">
           <div class="portfolio-filter">
-            <?php echo do_shortcode('[facetwp facet="status"]'); ?>
-            <?php echo do_shortcode('[facetwp facet="industry"]'); ?>
-          </div>
+            <?php echo do_shortcode('[facetwp facet="funds"]'); ?>
+              </div>
         </div>
         </div>
         <div class="portfolio-row">
@@ -20,6 +20,7 @@
       </div>
       </div>
     </section>
+  </div>
   </div>
   </div>
 </section>
