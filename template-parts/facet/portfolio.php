@@ -1,5 +1,5 @@
 <?php while (have_posts()) { the_post(); ?>
-  <a class="post" href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">
+  <div class="post" id="post-<?php the_ID(); ?>">
   <div class="post-main">
     <h3><?php
 	    $terms = get_the_terms( $post->ID , 'portfolio_funds' );
@@ -10,7 +10,16 @@
     endif;
 	    ?></h3>
     <h4><?php echo get_the_title(); ?></h4>
-    <p><strong>Status</strong>: Active</p>
+    <p><?php 
+    $statuses = get_the_terms( $post->ID , 'portfolio_status' );
+    if ($statuses) :
+        echo '<strong>Status:</strong> &nbsp;';
+        foreach ( $statuses as $status ) {
+            echo $status->name ;
+        }
+    endif;
+    ?>
+</p>
   </div>
-</a>
+</div>
 <?php } ?>

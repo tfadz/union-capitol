@@ -9,8 +9,8 @@
             </div>
             <h3><?php the_sub_field('title') ?></h3>
             <p><?php the_sub_field('text') ?></p>
-            <div class="phone"><i class="fas fa-phone-alt"></i> <?php the_sub_field('phone') ?></div>
-            <div class="email"><i class="fas fa-comments-alt"></i> <?php the_sub_field('email') ?></div>
+            <div class="phone"><i class="fas fa-phone-alt"></i> <a href="<?php the_sub_field('phone') ?>"><?php the_sub_field('phone') ?></a></div>
+            <div class="email"><i class="fas fa-comments-alt"></i> <a href="mailto:<?php the_sub_field('email') ?>"><?php the_sub_field('email') ?></a></div>
           </div>
         </div>
       <?php endwhile; endif; ?>
