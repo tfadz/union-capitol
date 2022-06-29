@@ -12,6 +12,11 @@ jQuery(function($) {
     });
   };
 	
+	function contentBusiness () {
+		$('.content-business-section h2.headline').each(function() {
+			$(this).css('top',$('.feature-hero.secondary h1').offset().top - $(this).closest('.content-business-section').offset().top);
+		});
+	};
 	
 	function hero () {
     $('.content-block .headline').each(function() {
@@ -38,11 +43,7 @@ jQuery(function($) {
 		});
 	};
 	
-	function contentBusiness () {
-		$('.content-business-section h2.headline').each(function() {
-			$(this).css('top',$('.feature-hero.secondary h1').offset().top - $(this).closest('.content-business-section').offset().top);
-		});
-	};
+
 
   $(document).scroll(function() {
     homeHero();

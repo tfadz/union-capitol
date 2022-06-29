@@ -16,7 +16,11 @@
       display: flex;
 
       @media (max-width: $small) {
-        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
       }
 
       .et-title {
@@ -24,14 +28,16 @@
       }
 
       .et-image {
-        max-width: 500px;
+        max-width: 450px;
+        min-width: 220px;
       }
 
       .et-content {
         font-size: 1.25rem;
         color: $black;
         font-family: $primary-font;
-        padding-left: 5rem;
+        padding-left: 4rem;
+        padding-top: 2rem;
 
         @media (max-width: $small) {
           padding-left: 0;

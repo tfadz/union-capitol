@@ -20,7 +20,7 @@
       </div>
       </div>
       <div class="col-md-3">
-        <a target="_blank" class="linkedin" href="https://www.linkedin.com/company/unioncapitalassociatesllc/"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.svg" alt="" /></a>
+        <a target="_blank" class="linkedin" href="https://www.linkedin.com/company/unioncapitalassociatesllc/about/"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.svg" alt="" /></a>
       </div>
     </div>
     <div class="row">

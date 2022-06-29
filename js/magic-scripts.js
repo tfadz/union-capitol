@@ -9,10 +9,10 @@ jQuery(function($) {
       var hero = new ScrollMagic.Controller();
       new ScrollMagic.Scene({
        triggerElement: ".feature-hero-main",
-       duration: $('.content-block-wrapper').outerHeight(true) - 40,
+       duration: $('.content-block-wrapper').outerHeight(true) +20,
       })
       .setPin(".feature-hero .feature-hero-main h1")
-      // .addIndicators()
+      //.addIndicators()
       .addTo(hero);
     }
     
@@ -100,8 +100,6 @@ jQuery(function($) {
   .setClassToggle('.image-two-col__media h2', 'show')
   // .setTween(tween)
   .addTo(imageTwocolFade);
-  
-  
   
   
 
