@@ -1,8 +1,13 @@
 .page-template-page-contact {
-	.content-block {
-		min-height: 400px;
-	}
-	.content-block-main {
-		padding-top: 2rem;
-	}
+  .content-block {
+    min-height: 400px;
+  }
+
+  .content-block-main {
+    padding-top: 2rem;
+
+    @media (max-width: $xsmall) {
+      padding-top: 1rem;
+    }
+  }
 }

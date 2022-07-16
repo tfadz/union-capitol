@@ -10,21 +10,30 @@
       padding-bottom: 2rem;
     }
   }
+
   @media (max-width: $small) {
     .col-md-6 {
       padding-bottom: 2rem;
     }
   }
 
-
   &-main {
     padding-bottom: 4rem;
     margin-top: 4rem;
+
+    @media (max-width: $medium) {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+    }
   }
 
   &-text {
     max-width: 850px;
     padding-top: 3rem;
+
+    @media (max-width: $small) {
+      padding-top: 1rem;
+    }
   }
 
   &-section {
@@ -38,6 +47,14 @@
       left: auto;
       z-index: 99;
       position: relative;
+
+      @media (max-width: $medium) {
+        padding-bottom: 1rem;
+      }
+
+      @media (max-width: $small) {
+        font-size: 2.85rem;
+      }
     }
   }
 

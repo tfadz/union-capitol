@@ -36,7 +36,7 @@
 	<header id="masthead" class="site-header">
 	<div class="container">
 		<div class="row site-header-row">
-			<div class="col-6 col-sm-4">
+			<div class="col-8 col-sm-4">
 				<div class="site-branding">
 				
           <?php if(has_custom_logo()) : ?>
@@ -46,7 +46,7 @@
     			<?php endif; ?>					
 				</div>
       </div>
-      <div class="col-6 col-sm-8">
+      <div class="col-4 col-sm-8">
       
       <nav id="site-navigation" class="main-navigation">
         <?php

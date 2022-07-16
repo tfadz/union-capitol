@@ -16,6 +16,11 @@
 
     @media (max-width: $small) {
       min-height: 400px;
+      padding-bottom: 3rem;
+
+      .button {
+        margin-top: 1rem;
+      }
     }
   }
 
@@ -26,6 +31,22 @@
     position: relative;
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
+
+    @media (max-width: $medium) {
+      top: auto !important;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (max-width: $small) {
+      font-size: 2.85rem;
+    }
+
+    @media (max-width: $xsmall) {
+      margin-bottom: 1rem;
+    }
   }
 
   &-stats {
@@ -34,8 +55,8 @@
     margin: 0;
 
     @media (max-width: $small) {
-      display: block;
-      padding-top: 2rem;
+      padding: 1rem 0;
+      flex-wrap: wrap;
     }
 
     li {
@@ -44,8 +65,14 @@
       text-align: center;
 
       @media (max-width: $small) {
-        padding-bottom: 3rem;
+        padding: 0 1.25rem 3rem .25rem;
         text-align: left;
+        width: 50%;
+        flex: none;
+
+        &:nth-child(2) {
+          padding-right: 0;
+        }
       }
 
       h3 {
@@ -59,10 +86,14 @@
         line-height: 1.2;
         font-size: 1.25rem;
         font-weight: $regular-medium;
+
         @media (max-width: $small) {
           margin: 0;
-        }
 
+          br {
+            display: none;
+          }
+        }
       }
     }
   }

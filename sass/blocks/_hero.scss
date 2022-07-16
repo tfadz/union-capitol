@@ -29,8 +29,12 @@
   position: relative;
   width: 100%;
 
+  @media (max-width: $medium) {
+    margin-bottom: 2rem;
+  }
+
   @media (max-width: $small) {
-    height: 350px;
+    height: 300px;
   }
 
   &-slider {
@@ -50,20 +54,26 @@
     }
 
     @media (max-width: $small) {
-      height: 350px;
+      height: 300px;
     }
 
     .slick-list {
       height: 650px;
 
       @media (max-width: $small) {
-        height: 350px;
+        height: 300px;
       }
     }
 
     img {
       height: auto;
       width: 100%;
+      min-height: 650px;
+      object-fit: cover;
+
+      @media (max-width: $small) {
+        height: 300px;
+      }
     }
 
     figure {
@@ -105,7 +115,7 @@
     min-height: 650px;
 
     @media (max-width: $small) {
-      min-height: 350px;
+      min-height: 300px;
     }
   }
 
@@ -126,16 +136,25 @@
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 
+    @media (max-width: $medium) {
+      display: none;
+    }
+
     @media (max-width: $small) {
       padding-right: 1rem;
       line-height: 1.1;
       padding-top: 10vh;
+      font-size: 2.85rem;
     }
   }
 
   &.secondary {
     background-size: cover;
     background-position: center;
+
+    @media (max-width: $medium) {
+      margin-bottom: 0;
+    }
 
     h1 {
       animation: none;
@@ -178,16 +197,19 @@
   }
 
   &.headline-change {
-    opacity: 0;
     color: white;
+    display: none;
+  
 
-    // This is to hide the text on page load and then show
-    animation: .2s fadeIn forwards;
-    animation-delay: 2s;
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
     transform: translateZ(0);
-    -webkit-transform: translate3d(0, 0, 0);
+    
+    &.show {
+      display: block;
+    }
+
+    @media (max-width: $medium) {
+      display: none;
+    }
   }
 }
 
@@ -195,7 +217,7 @@
   height: 650px;
 
   @media (max-width: $small) {
-    height: 350px;
+    height: 300px;
   }
 
   .home-hero-slider {
@@ -234,8 +256,6 @@
     figure {
       background-repeat: no-repeat;
       background-size: cover;
-
-      // background-position: 50% 100px;
       background-size: cover;
       background-attachment: fixed;
       overflow: hidden;
@@ -251,19 +271,6 @@
         background-attachment: initial;
         background-position: center;
       }
-
-      // &:before {
-      //   background-color: #111;
-      //   content: "";
-      //   height: 100%;
-      //   left: 0;
-      //   opacity: .2;
-      //   position: absolute;
-      //   top: 0;
-      //   width: 100%;
-      //   z-index: 1;
-      // }
-   
     }
   }
 }

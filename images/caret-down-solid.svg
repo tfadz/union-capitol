@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="19px" viewBox="0 0 33 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>caret-down-solid</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="caret-down-solid" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M31.1541367,5.403125 L18.4176365,18.0697917 C17.7061561,18.6932292 16.8844465,19 16.0627368,19 C15.2410271,19 14.4213216,18.6907552 13.7950184,18.0722656 L1.05851824,5.40559896 C0.0518637394,4.50260417 -0.222747631,3.13697917 0.273685272,1.959375 C0.770118176,0.781770833 1.94035303,0 3.23604892,0 L28.799237,0 C30.0959349,0 31.2663702,0.769994792 31.7634044,1.95442708 C32.2604385,3.13885937 32.0760549,4.50260417 31.1541367,5.403125 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

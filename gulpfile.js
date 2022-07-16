@@ -1,6 +1,6 @@
 const { src, dest, watch } = require('gulp');
 const gulp = require('gulp');
-var sass = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('sass'));
 const minifyCSS = require('gulp-csso');
 const concat = require('gulp-concat');
 const postcss = require('gulp-postcss');

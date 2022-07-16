@@ -5,12 +5,17 @@
 
   @media (max-width: $small) {
     display: block;
+    padding-top: 2rem;
   }
 
   &-section {
     background: white;
     position: relative;
     z-index: 1;
+
+    @media (max-width: $small) {
+      margin-top: 3.5rem;
+    }
   }
 
   &-item {
@@ -29,6 +34,7 @@
       width: 100%;
       min-height: 0;
       display: block;
+      margin-bottom: 1.5rem;
     }
 
     h5 {

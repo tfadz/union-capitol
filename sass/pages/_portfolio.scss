@@ -2,7 +2,7 @@
   &-section {
     padding: 1rem 0 3rem 0;
 
-    @media (min-width: 769px) {
+    @media (min-width: 1000px) {
       margin-top: -2rem;
     }
   }
@@ -18,23 +18,24 @@
       position: relative;
       margin-bottom: 30px;
 
-      &:after {
-        content: "\f0d7";
-        color: $white;
-        font-family: "Font Awesome 5 Pro";
-        font-weight: 900;
-        font-size: 2rem;
-        height: 1rem;
-        position: absolute;
-        right: 1.5rem;
-        top: .3rem;
-        width: 1rem;
-        z-index: 10;
+      @media (max-width: $small) {
+        max-width: 100%;
       }
 
-      &:first-child {
-        margin-right: 1rem;
-      }
+      // &:after {
+      //   content: "\f0d7";
+      //   color: $white;
+      //   font-family: "Font Awesome 5 Pro";
+      //   font-weight: 900;
+      //   font-size: 2rem;
+      //   height: 1rem;
+      //   position: absolute;
+      //   right: 1.5rem;
+      //   top: .3rem;
+      //   width: 1rem;
+      //   z-index: 10;
+      // }
+   
     }
 
     .facetwp-dropdown {
@@ -42,7 +43,12 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       -ms-appearance: none;
-      background: $blue;
+      background-color: $blue;
+      background-image: url("./images/caret-down-solid.svg");
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-position-x: 92%;
+      background-position-y: 24px;
       border: none;
       color: $white;
       text-transform: uppercase;
@@ -51,6 +57,10 @@
       padding: 1rem;
       width: 100%;
       max-width: 300px;
+
+      @media (max-width: $small) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -61,6 +71,10 @@
       padding-bottom: 2rem;
       width: 100%;
       margin-left: -1.5rem;
+
+      @media (max-width: $medium) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -73,19 +87,33 @@
     min-width: 285px;
     width: calc(24% - 25px);
     margin-left: 25px;
-    
-    @media (max-width: 900px) {
-      min-width: 285px;
-      width: calc(50% - 25px);
-      margin-left: 25px;
-    }
-    
-    @media (max-width: $small) {
-      min-width: 200px;
-      width: calc(50% - 20px);
-      margin-left: 20px;
+
+    @media (max-width: $medium) {
+      width: 100%;
+      max-width: 47%;
+      margin: 0 1.25rem 2rem 0;
+      min-width: 0;
     }
 
+    // @media (max-width: 900px) {
+    //   min-width: 285px;
+    //   width: calc(50% - 25px);
+    //   margin-left: 25px;
+    // }
+
+    @media (max-width: $small) {
+      max-width: 48%;
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: $xsmall) {
+      max-width: 100%;
+      margin-right: 0;
+      min-height: 300px;
+    }
 
     &-main {
       display: flex;

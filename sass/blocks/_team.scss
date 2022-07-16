@@ -1,12 +1,26 @@
+// .page-template-page-team {
+//   .content-block-wrapper {
+//     margin-top: 5rem;
+//   }
+// }
+
 .team {
   &-section {
     background: $yellow;
     padding: 10rem 0;
 
+    @media (max-width: $medium) {
+      padding: 4rem 0;
+    }
+
     .post {
       text-decoration: none;
       display: block;
       margin-bottom: 4rem;
+
+      @media (max-width: $small) {
+        margin-bottom: 1.5rem;
+      }
 
       .featured-img {
         height: 280px;
